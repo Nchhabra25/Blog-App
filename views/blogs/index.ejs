@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Blogs</h1>
+    <a href="/new">Add new Blog</a><br>
+    <% for(let item of blogs){ %>
+        <img src="<%=item.img%>" alt="...">
+        <h3> <%= item.title %> </h3>
+        <p> <%= item.content.substring(0,170) %>... </p>
+        <a href="/<%= item.id %>">View Blog</a><br>
+        <a href="/<%= item.id %>/edit">Edit Blog</a><br>
+
+    <% } %>
+</body>
+</html>

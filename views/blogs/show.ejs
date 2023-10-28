@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3> <%=foundblog.title%> </h3>
+    <img src="<%=foundblog.img%>">
+    <p> <%=foundblog.content%> </p>
+    <h3><%=foundblog.author%></h3>
+    <form action="/<%=foundblog._id%>?_method=DELETE" method="POST">
+        <button>Delete</button>
+     </form>
+</body>
+</html>
